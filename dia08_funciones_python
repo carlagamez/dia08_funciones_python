@@ -1,0 +1,192 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Día 8 — Funciones en Python\n",
+        "\n",
+        "Hoy aprenderé:\n",
+        "\n",
+        "- Qué es una función\n",
+        "- Cómo crear funciones con def\n",
+        "- Cómo pasar parámetros\n",
+        "- Cómo devolver valores con return\n",
+        "\n",
+        "Reto: 100 días aprendiendo a programar  \n",
+        "Día: 8/100"
+      ],
+      "metadata": {
+        "id": "h7yGAOabTeZb"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## ¿Qué es una función?\n",
+        "\n",
+        "Una función es un bloque de código que realiza una tarea específica.\n",
+        "\n",
+        "Sirve para:\n",
+        "- organizar el código\n",
+        "- evitar repetir código\n",
+        "- hacer el programa más limpio y profesional"
+      ],
+      "metadata": {
+        "id": "QJAHPlE9Th6N"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def saludar():\n",
+        "  print(\"Hola, estoy aprendiendo funciones\")"
+      ],
+      "metadata": {
+        "id": "DK4KnJecTfJQ"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "saludar()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZAQNFNILTsDs",
+        "outputId": "1c2fbeee-9b51-4aa0-c6cd-bf54266b70e2"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hola, estoy aprendiendo funciones\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def saludar_persona(nombre):\n",
+        "  print(\"Hola\", nombre, \"Bienvenida al mundo de la programación\")\n",
+        "saludar_persona(\"Carla\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jELPfCeZTvFB",
+        "outputId": "2c1f1879-cb10-4d62-cf6e-ffbdd8a2c0dd"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hola Carla Bienvenida al mundo de la programación\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def sumar(a,b):\n",
+        "  resultado = a + b\n",
+        "  return resultado\n",
+        "total = sumar(5,3)\n",
+        "print(\"El resultado es:\", total)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QONGDCnBUEcK",
+        "outputId": "9a4a60f2-c704-47b4-ef39-7cb2f2688ef4"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "El resultado es: 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def suma(a, b):\n",
+        "  return a + b\n",
+        "def resta(a, b):\n",
+        "  return a - b\n",
+        "def multiplicacion(a, b):\n",
+        "  return a * b\n",
+        "def division(a, b):\n",
+        "  return a / b\n",
+        "\n",
+        "numero1 = float(input(\"Ingrese el primer número: \"))\n",
+        "numero2 = float(input(\"Ingrese el segundo número: \"))\n",
+        "\n",
+        "print(\"Suma:\", suma(numero1, numero2))\n",
+        "print(\"Resta:\", resta(numero1, numero2))\n",
+        "print(\"Multiplicación:\", multiplicacion(numero1, numero2))\n",
+        "print(\"División:\", division(numero1, numero2))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ur9h-e1QUtEd",
+        "outputId": "abc5e74e-4ec4-426f-9ce9-1a7dba62aa2f"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el primer número: 4\n",
+            "Ingrese el segundo número: 7\n",
+            "Suma: 11.0\n",
+            "Resta: -3.0\n",
+            "Multiplicación: 28.0\n",
+            "División: 0.5714285714285714\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "4zkg_mylVi-v"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
